@@ -4,7 +4,7 @@ scale_age <- readxl::read_xlsx(
   "~/Poisson Consulting Dropbox/Data/sample-size-23/Scale Age Data Set - Copy.xlsx",
   range = "A2:E30"
 ) |>
-  (function(x){
+  (function(x) {
     cbind(
       x[1],
       stack(
@@ -12,8 +12,7 @@ scale_age <- readxl::read_xlsx(
         select = 2:5
       )
     )
-  }
-  )() |>
+  })() |>
   setNames(c("brood_year", "captures", "age"))
 
 usethis::use_data(scale_age, overwrite = TRUE)
