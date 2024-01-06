@@ -1,4 +1,17 @@
-## code to prepare `salmonids` dataset goes here
+scale_age <- readxl::read_xlsx(
+  "~/Poisson Consulting Dropbox/Data/sample-size-23/Scale Age Data Set - Copy.xlsx",
+  range = "A2:E30"
+) |>
+  (function(x) {
+    cbind(
+      x[1],
+      stack(
+        x,
+        select = 2:5
+      )
+    )
+  })() |>
+  setNames(c("brood_year", "captures", "age"))
 
 # use expanded sheet since more data (TotCatch has 189 more non-NA data points)
 salmonids <- readxl::read_xlsx(
@@ -49,4 +62,5 @@ salmonids <- readxl::read_xlsx(
     )
   )
 
+usethis::use_data(scale_age, overwrite = TRUE)
 usethis::use_data(salmonids, overwrite = TRUE)
