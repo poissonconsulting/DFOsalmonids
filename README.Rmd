@@ -4,16 +4,25 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of DFOsalmonids is to ...
+DFOsalmonids is a data package containing salmon catch and release data ("salmonids") and example data for salmon counts by age class ("scale_data") provided by Fisheries and Oceans Canada (DFO).
 
 ## Installation
 
+DFOsalmonids can be installed from GitHub using the remotes package:
+``` r
+remotes::install_github("poissonconsulting/DFOsalmonids")
+```
+or alternatively using the pak package:
+``` r
+pak::pak("poissonconsulting/DFOsalmonids")
+```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Loading in data:
 
 ``` r
 library(DFOsalmonids)
-## basic example code
+View(salmonids)
+View(scale_data)
 ```
