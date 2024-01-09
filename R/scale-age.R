@@ -7,7 +7,7 @@
 #' A data frame with 112 rows and 3 columns:
 #' \describe{
 #'   \item{brood_year}{Brood year}
-#'   \item{captures}{Number of samples for that age group}
+#'   \item{captures}{Number of samples in age group}
 #'   \item{age}{Age of fish based on scale sample}
 #' }
 "scale_age"
