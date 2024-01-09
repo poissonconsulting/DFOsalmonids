@@ -20,7 +20,7 @@ pak::pak("poissonconsulting/DFOsalmonids")
 
 ## Example
 
-Loading in data:
+Loading in data for use:
 
 ``` r
 library(DFOsalmonids)
