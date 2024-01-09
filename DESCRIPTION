@@ -9,8 +9,7 @@ Authors@R:
       comment = c(ORCID = "0000-0002-8744-6405")
     )
 Description: Example data containing salmonid catches for DFO stats course.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: GPL (>= 3)
 URL: https://github.com/poissonconsulting/DFOsalmonids
 Depends:
     R (>= 4.1)
