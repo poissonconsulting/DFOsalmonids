@@ -4,9 +4,9 @@
 \name{DFOsalmonids-package}
 \alias{DFOsalmonids}
 \alias{DFOsalmonids-package}
-\title{DFOsalmonids: DFOsalmonids}
+\title{DFOsalmonids: Example data for the DFO sample statistics course}
 \description{
-Example data containing salmonid catches for DFO stats course.
+Example data containing theoretical catches of salmonids from different age classes as well as tagged catch/release data.
 }
 \seealso{
 Useful links:

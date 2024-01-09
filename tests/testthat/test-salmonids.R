@@ -1,9 +1,9 @@
 test_that("salmonids", {
   expect_equal(nrow(salmonids), 18512)
   expect_equal(ncol(salmonids), 39)
-  
+
   expect_true(chk::vld_s3_class(salmonids, "tbl"))
-  
+
   expect_true(chk::vld_identical(
     colnames(salmonids),
     c(
@@ -48,7 +48,7 @@ test_that("salmonids", {
       "Escape"
     )
   ))
-  
+
   expect_true(chk::vld_s3_class(salmonids$PROJ_NAME, "character"))
   expect_true(chk::vld_s3_class(salmonids$SPECIES_CODE, "character"))
   expect_true(chk::vld_s3_class(salmonids$SPECIES_NAME, "character"))
@@ -88,5 +88,4 @@ test_that("salmonids", {
   expect_true(chk::vld_s3_class(salmonids$USCatch, "numeric"))
   expect_true(chk::vld_s3_class(salmonids$TotCatch, "numeric"))
   expect_true(chk::vld_s3_class(salmonids$Escape, "numeric"))
-}
-)
+})
