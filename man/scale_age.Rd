@@ -3,7 +3,7 @@
 \docType{data}
 \name{scale_age}
 \alias{scale_age}
-\title{scale age data}
+\title{Scale Age Data}
 \format{
 \subsection{\code{scale_age}}{
 
@@ -20,6 +20,6 @@ scale_age
 }
 \description{
 Example data for counts of salmonids from different age classes based on
-scale data
+scale data.
 }
 \keyword{datasets}

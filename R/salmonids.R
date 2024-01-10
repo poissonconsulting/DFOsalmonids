@@ -1,6 +1,6 @@
-#' salmonid data
+#' Salmonid Data
 #'
-#' Release and recovery data for counts of salmonids from different age classes
+#' Release and recovery data for counts of salmonids from different age classes.
 #'
 #' @format ## `scale_age`
 #' A tibble with 18512 rows and 39 columns
