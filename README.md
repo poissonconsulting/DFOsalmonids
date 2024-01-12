@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/poissonconsulting/DFOsalmonids/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/DFOsalmonids/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/poissonconsulting/DFOsalmonids/branch/main/graph/badge.svg?token=dej0VsMNHf)](https://codecov.io/gh/poissonconsulting/DFOsalmonids)
 <!-- badges: end -->
 
 DFOsalmonids is a data package containing salmon catch and release data
