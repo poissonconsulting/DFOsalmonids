@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/poissonconsulting/DFOsalmonids/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/DFOsalmonids/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/poissonconsulting/DFOsalmonids/branch/main/graph/badge.svg?token=dej0VsMNHf)](https://codecov.io/gh/poissonconsulting/DFOsalmonids)
 <!-- badges: end -->
 
 DFOsalmonids is a data package containing salmon catch and release data ("salmonids") and example data for salmon counts by age class ("scale_data") provided by Fisheries and Oceans Canada (DFO).
@@ -36,10 +37,36 @@ pak::pak("poissonconsulting/DFOsalmonids")
 
 Loading in data for use:
 
-``` r
+``` {r, include = TRUE}
 library(DFOsalmonids)
-View(salmonids)
-View(scale_data)
+```
+
+Viewing column (variable) names:
+
+``` {r, include = TRUE}
+colnames(salmonids)
+colnames(scale_age)
+```
+
+Viewing the first few rows of 'scale_age' data:
+
+``` {r, include = TRUE}
+head(scale_age)
+```
+
+Viewing the first few rows of a subset from 'salmonids' data (only viewing several of the many columns/variables):
+
+``` {r, include = TRUE}
+salmonids[c("SPECIES_NAME",
+            "BROOD_YEAR",
+            "START_DATE",
+            "END_DATE",
+            "TotTagged",
+            "TotRelease",
+            "Age",
+            "TotCatch"
+          )] |>
+  head()
 ```
 
 ## Contribution
@@ -47,3 +74,7 @@ View(scale_data)
 Please report any [issues](https://github.com/poissonconsulting/DFOsalmonids/issues).
 
 [Pull requests](https://github.com/poissonconsulting/DFOsalmonids/pulls) are always welcome.
+
+## Code of Conduct
+
+Please note that the DFOsalmonids project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

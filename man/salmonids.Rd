@@ -3,7 +3,7 @@
 \docType{data}
 \name{salmonids}
 \alias{salmonids}
-\title{salmonid data}
+\title{Salmonid Data}
 \format{
 \subsection{\code{scale_age}}{
 
@@ -55,6 +55,6 @@ A tibble with 18512 rows and 39 columns
 salmonids
 }
 \description{
-Release and recovery data for counts of salmonids from different age classes
+Release and recovery data for counts of salmonids from different age classes.
 }
 \keyword{datasets}

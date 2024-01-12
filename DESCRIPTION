@@ -15,7 +15,6 @@ URL: https://github.com/poissonconsulting/DFOsalmonids
 Depends:
     R (>= 4.1)
 Suggests:
-    chk,
     covr,
     readxl,
     testthat (>= 3.0.0)

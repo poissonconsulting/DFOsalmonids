@@ -1,7 +1,7 @@
-#' scale age data
+#' Scale age data
 #'
 #' Example data for counts of salmonids from different age classes based on
-#' scale data
+#' scale data.
 #'
 #' @format ## `scale_age`
 #' A data frame with 112 rows and 3 columns:
