@@ -12,8 +12,10 @@ jobs:
   test-coverage:
     runs-on: ubuntu-latest
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
+      GITHUB_PAT: ${{ secrets.PRIVATE_ACTIONS_PAT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }} 
+    
     steps:
       - uses: actions/checkout@v3
 
@@ -31,7 +33,7 @@ jobs:
           covr::codecov(
             quiet = FALSE,
             clean = FALSE,
-            install_path = file.path(normalizePath(Sys.getenv("RUNNER_TEMP"), winslash = "/"), "package")
+            install_path = file.path(Sys.getenv("RUNNER_TEMP"), "package")
           )
         shell: Rscript {0}
 
