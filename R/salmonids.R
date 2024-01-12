@@ -1,4 +1,4 @@
-#' Salmonid Data
+#' Salmonid data
 #'
 #' Release and recovery data for counts of salmonids from different age classes.
 #'

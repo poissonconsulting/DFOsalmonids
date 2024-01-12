@@ -1,4 +1,4 @@
-#' Scale Age Data
+#' Scale age data
 #'
 #' Example data for counts of salmonids from different age classes based on
 #' scale data.
