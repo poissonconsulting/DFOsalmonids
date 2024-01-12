@@ -36,10 +36,36 @@ pak::pak("poissonconsulting/DFOsalmonids")
 
 Loading in data for use:
 
-``` r
+``` {r, include = TRUE}
 library(DFOsalmonids)
-View(salmonids)
-View(scale_data)
+```
+
+Viewing column (variable) names:
+
+``` {r, include = TRUE}
+colnames(salmonids)
+colnames(scale_age)
+```
+
+Viewing the first few rows of 'scale_age' data:
+
+``` {r, include = TRUE}
+head(scale_age)
+```
+
+Viewing the first few rows of a subset from 'salmonids' data (only viewing several of the many columns/variables):
+
+``` {r, include = TRUE}
+salmonids[c("SPECIES_NAME",
+            "BROOD_YEAR",
+            "START_DATE",
+            "END_DATE",
+            "TotTagged",
+            "TotRelease",
+            "Age",
+            "TotCatch"
+          )] |>
+  head()
 ```
 
 ## Contribution
