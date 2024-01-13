@@ -3,7 +3,7 @@
 \docType{data}
 \name{scale_age}
 \alias{scale_age}
-\title{Scale Age Data}
+\title{Scale age data}
 \format{
 \subsection{\code{scale_age}}{
 

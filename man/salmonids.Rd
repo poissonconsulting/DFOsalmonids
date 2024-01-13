@@ -3,7 +3,7 @@
 \docType{data}
 \name{salmonids}
 \alias{salmonids}
-\title{Salmonid Data}
+\title{Salmonid data}
 \format{
 \subsection{\code{scale_age}}{
 

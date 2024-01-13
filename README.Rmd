@@ -56,15 +56,16 @@ head(scale_age)
 Viewing the first few rows of a subset from 'salmonids' data (only viewing several of the many columns/variables):
 
 ``` {r, include = TRUE}
-salmonids[c("SPECIES_NAME",
-            "BROOD_YEAR",
-            "START_DATE",
-            "END_DATE",
-            "TotTagged",
-            "TotRelease",
-            "Age",
-            "TotCatch"
-          )] |>
+salmonids[c(
+  "SPECIES_NAME",
+  "BROOD_YEAR",
+  "START_DATE",
+  "END_DATE",
+  "TotTagged",
+  "TotRelease",
+  "Age",
+  "TotCatch"
+)] |>
   head()
 ```
 
