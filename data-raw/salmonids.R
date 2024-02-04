@@ -1,6 +1,9 @@
 library(dplyr)
 library(tidyr)
+library(stringr)
 library(readxl)
+library(lubridate)
+library(dttr2)
 
 rm(list = ls())
 
@@ -50,6 +53,9 @@ salmonids <- read_xlsx(
     TotCatch,
     Escape
   ) %>%
-  mutate(across(c(SPECIES_CODE, RUN_CODE, BROOD_YEAR, TAG_USE_INDEX, RELEASE_YEAR, TotTagged, TotRelease, Age, RecovYear), ~as.integer(.x)))
+  mutate(across(c(SPECIES_CODE, RUN_CODE, BROOD_YEAR, TAG_USE_INDEX, RELEASE_YEAR, TotTagged, TotRelease, Age, RecovYear), ~as.integer(.x)),
+         across(c(START_DATE, END_DATE), ~str_replace(.x, "^(\\d{6,6})$", "\\101")),
+         across(c(START_DATE, END_DATE), ~ymd(.x)),
+         across(c(START_DATE, END_DATE), ~dtt_date(.x))) 
 
 usethis::use_data(salmonids, overwrite = TRUE)
