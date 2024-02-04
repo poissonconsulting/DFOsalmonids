@@ -16,6 +16,7 @@ Depends:
     R (>= 4.1)
 Suggests:
     readxl,
+    tibble,
     testthat (>= 3.0.0)
 Encoding: UTF-8
 Language: en-US

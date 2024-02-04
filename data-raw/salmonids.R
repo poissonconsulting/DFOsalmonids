@@ -1,6 +1,6 @@
 # use expanded sheet since more data (TotCatch has 189 more non-NA data points)
 salmonids <- readxl::read_xlsx(
-  "~/Code/DFOsalmonids/data-raw/2021-04-28 Recoveries by Catch Region_Chinook_All years - Copy.xlsx",
+  "data-raw/2021-04-28 Recoveries by Catch Region_Chinook_All years - Copy.xlsx",
   sheet = "Expanded"
 ) |>
   subset(

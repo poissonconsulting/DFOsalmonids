@@ -1,5 +1,5 @@
 scale_age <- readxl::read_xlsx(
-  "~/Code/DFOsalmonids/data-raw/Scale Age Data Set - Copy.xlsx",
+  "data-raw/Scale Age Data Set - Copy.xlsx",
   range = "A2:E30"
 ) |>
   (function(x) {
@@ -11,6 +11,7 @@ scale_age <- readxl::read_xlsx(
       )
     )
   })() |>
-  setNames(c("brood_year", "captures", "age"))
+  setNames(c("brood_year", "captures", "age")) %>%
+  tibble::as_tibble()
 
 usethis::use_data(scale_age, overwrite = TRUE)
