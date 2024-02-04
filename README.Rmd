@@ -25,11 +25,8 @@ DFOsalmonids is a data package containing salmon catch and release data ("salmon
 
 DFOsalmonids can be installed from GitHub using the remotes package:
 ``` r
+# install.packages("remotes")
 remotes::install_github("poissonconsulting/DFOsalmonids")
-```
-or alternatively using the pak package:
-``` r
-pak::pak("poissonconsulting/DFOsalmonids")
 ```
 
 ## Example
@@ -77,4 +74,5 @@ Please report any [issues](https://github.com/poissonconsulting/DFOsalmonids/iss
 
 ## Code of Conduct
 
-Please note that the DFOsalmonids project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+Please note that the DFOsalmonids project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). 
+By contributing to this project, you agree to abide by its terms.

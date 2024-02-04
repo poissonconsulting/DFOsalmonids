@@ -6,7 +6,6 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/poissonconsulting/DFOsalmonids/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/DFOsalmonids/actions/workflows/R-CMD-check.yaml)
-[![codecov](https://codecov.io/gh/poissonconsulting/DFOsalmonids/branch/main/graph/badge.svg?token=dej0VsMNHf)](https://codecov.io/gh/poissonconsulting/DFOsalmonids)
 <!-- badges: end -->
 
 DFOsalmonids is a data package containing salmon catch and release data
@@ -18,13 +17,8 @@ DFOsalmonids is a data package containing salmon catch and release data
 DFOsalmonids can be installed from GitHub using the remotes package:
 
 ``` r
+# install.packages("remotes")
 remotes::install_github("poissonconsulting/DFOsalmonids")
-```
-
-or alternatively using the pak package:
-
-``` r
-pak::pak("poissonconsulting/DFOsalmonids")
 ```
 
 ## Example
@@ -73,15 +67,16 @@ Viewing the first few rows of a subset from ‘salmonids’ data (only
 viewing several of the many columns/variables):
 
 ``` r
-salmonids[c("SPECIES_NAME",
-            "BROOD_YEAR",
-            "START_DATE",
-            "END_DATE",
-            "TotTagged",
-            "TotRelease",
-            "Age",
-            "TotCatch"
-          )] |>
+salmonids[c(
+  "SPECIES_NAME",
+  "BROOD_YEAR",
+  "START_DATE",
+  "END_DATE",
+  "TotTagged",
+  "TotRelease",
+  "Age",
+  "TotCatch"
+)] |>
   head()
 #>   SPECIES_NAME BROOD_YEAR START_DATE END_DATE TotTagged TotRelease Age TotCatch
 #> 1      Chinook       1989   19900521 19900521     24620      42400   2     6.85
