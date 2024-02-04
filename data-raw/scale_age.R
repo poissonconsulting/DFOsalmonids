@@ -11,6 +11,6 @@ scale_age <- read_xlsx(
   pivot_longer(!`Brood Year`, names_to = "age", values_to = "captures") %>%
   rename(brood_year = `Brood Year`) %>%
   mutate(across(everything(), ~as.integer(.x))) %>%
-  replace_na(list(age = 0L))
+  replace_na(list(captures = 0L))
 
 usethis::use_data(scale_age, overwrite = TRUE)
