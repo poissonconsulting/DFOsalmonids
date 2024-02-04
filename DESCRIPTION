@@ -17,6 +17,8 @@ Depends:
 Suggests:
     readxl,
     tibble,
+    dplyr,
+    tidyr,
     testthat (>= 3.0.0)
 Encoding: UTF-8
 Language: en-US

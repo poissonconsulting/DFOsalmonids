@@ -12,14 +12,14 @@ test_that("scale_age column names unchanged", {
     colnames(scale_age),
     c(
       "brood_year",
-      "captures",
-      "age"
+      "age",
+      "captures"
     )
   )
 })
 
 test_that("scale_age columns have correct data types", {
-  expect_type(scale_age$brood_year, "double")
-  expect_type(scale_age$captures, "double")
+  expect_type(scale_age$brood_year, "integer")
+  expect_type(scale_age$captures, "integer")
   expect_type(scale_age$age, "integer")
 })
