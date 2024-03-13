@@ -10,7 +10,7 @@ Authors@R:
     )
 Description: Example data containing theoretical catches of salmonids from
     different age classes as well as tagged catch/release data.
-License: GPL (>= 3)
+License: MIT + file LICENSE
 URL: https://github.com/poissonconsulting/DFOsalmonids
 Depends:
     R (>= 4.1)
